@@ -1,6 +1,6 @@
 {
   "name": "korean-lotto",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Get the lotto result from the lotto site",
   "main": "lib/index.js",
   "scripts": {
@@ -13,8 +13,15 @@
     "request": "^2.88.0",
     "request-promise": "^4.2.4"
   },
+  "keywords": [
+    "korean",
+    "lotto"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/hs85jeong/korean-lotto.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hs85jeong/korean-lotto/issues"
   }
 }
