@@ -16,25 +16,19 @@ var lotto = require('korean-lotto');
 
 ### Get last turn
 ```js
-var lotto = require('korean-lotto');
-
 lotto.getLastTurn().then(turn => console.log(turn));
 // 861
 ```
 
-### Get specific lotto result
+### Get a specific result
 ```js
-var lotto = require('korean-lotto');
-
-lotto.getResult(861);
+lotto.getResult(861).then(result => console.log(result));
 // { win: [ '10', '23', '29', '33', '37', '40' ], bonus: '16' }
 ```
 
-### Get specific lotto detail result
+### Get a specific detail result
 ```js
-var lotto = require('korean-lotto');
-
-lotto.getDetailResult(861);
+lotto.getDetailResult(861).then(result => console.log(result));
 // { win: [ '11', '17', '19', '21', '22', '25' ],
 //   bonus: '24',
 //   totalMoney: '81,032,551,000',
@@ -47,3 +41,11 @@ lotto.getDetailResult(861);
 // }
 ```
 
+### Check input numbers whether it is matched
+```js
+lotto.checkNumber(862, ['10', '32', '38', '40', '42', '43']).then(result => console.log(result));
+// { match: ['10', '38', '40', '42', '43'],
+//   miss: ['32'],
+//   ranking: '2'
+// }
+```

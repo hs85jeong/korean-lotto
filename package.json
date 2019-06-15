@@ -1,6 +1,6 @@
 {
   "name": "korean-lotto",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Get the lotto result from the lotto site",
   "main": "lib/index.js",
   "scripts": {

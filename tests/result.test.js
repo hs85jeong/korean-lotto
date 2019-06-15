@@ -1,4 +1,4 @@
-const { getLastTurn,  getResult, getDetailResult } = require('../lib/lotto');
+const { getLastTurn,  getResult, getDetailResult } = require('../lib/result');
 
 describe('getLastTurn', () => {
   test('check to get get a last turn number correctly', async () => {
