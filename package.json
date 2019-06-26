@@ -4,6 +4,7 @@
   "description": "Get the lotto result from the lotto site",
   "main": "lib/index.js",
   "scripts": {
+    "lint": "semistandard",
     "test": "jest"
   },
   "author": "Hunseop Jeong <hs85jeong@gmail.com>",
@@ -25,6 +26,12 @@
     "url": "https://github.com/hs85jeong/korean-lotto/issues"
   },
   "devDependencies": {
-    "jest": "^24.8.0"
+    "jest": "^24.8.0",
+    "semistandard": "^13.0.1"
+  },
+  "semistandard": {
+    "ignore": [
+      "tests"
+    ]
   }
 }

@@ -1,8 +1,8 @@
-const { getLastTurn,  getResult, getDetailResult } = require('../lib/result');
+const { getLatestRound, getResult, getDetailResult } = require('../lib/result');
 
-describe('getLastTurn', () => {
+describe('getLatestRound', () => {
   test('check to get get a last turn number correctly', async () => {
-    const result = await getLastTurn();
+    const result = await getLatestRound();
     expect(result).toMatch(/\d/);
   });
 });

@@ -2,31 +2,30 @@
 korean-lotto is implemented to get the result from the lotto site
 
 ## Installation
-
-### Using npm:
+To use Korean-lotto in your project, run:
 ```shell
 $ npm i --save korean-lotto
 ```
 
-### Using in Node.js:
+### Usage
 ```js
 // Load package
 var lotto = require('korean-lotto');
 ```
 
-### Get last turn
+##### Get a latest round
 ```js
-lotto.getLastTurn().then(turn => console.log(turn));
-// 861
+lotto.getLatestRound().then(turn => console.log(turn));
+// '861'
 ```
 
-### Get a specific result
+##### Get a specific result
 ```js
 lotto.getResult(861).then(result => console.log(result));
 // { win: [ '10', '23', '29', '33', '37', '40' ], bonus: '16' }
 ```
 
-### Get a specific detail result
+##### Get a specific detail result
 ```js
 lotto.getDetailResult(861).then(result => console.log(result));
 // { win: [ '11', '17', '19', '21', '22', '25' ],
@@ -41,7 +40,7 @@ lotto.getDetailResult(861).then(result => console.log(result));
 // }
 ```
 
-### Check input numbers whether it is matched
+##### Check input numbers whether it is matched
 ```js
 lotto.checkNumber(862, ['10', '32', '38', '40', '42', '43']).then(result => console.log(result));
 // { match: ['10', '38', '40', '42', '43'],
@@ -49,3 +48,6 @@ lotto.checkNumber(862, ['10', '32', '38', '40', '42', '43']).then(result => cons
 //   ranking: '2'
 // }
 ```
+
+### Resources
+- [API Documentation](https://github.com/hs85jeong/korean-lotto/blob/master/docs/api.md)
