@@ -42,6 +42,11 @@ describe('getDetailResult', () => {
     const expectedBonus = '32';
     expect(result.bonus).toEqual(expectedBonus);
   });
+  
+  test('check to get the correct date', async () => {
+    const expectedDate = '2019년 06월 08일 추첨';
+    expect(result.date).toEqual(expectedDate);
+  });
 
   test('check to get correct total money', async () => {
     const expected = '80,609,005,000';

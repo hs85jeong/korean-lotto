@@ -30,6 +30,7 @@ lotto.getResult(861).then(result => console.log(result));
 lotto.getDetailResult(861).then(result => console.log(result));
 // { win: [ '11', '17', '19', '21', '22', '25' ],
 //   bonus: '24',
+//   date: '2019년 06월 01일 추첨',
 //   totalMoney: '81,032,551,000',
 //   amounts:
 //   [ { total: '19,488,435,376', match: '4', each: '4,872,108,844' },
